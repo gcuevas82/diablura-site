@@ -58,10 +58,10 @@ export const members: Member[] = [
     bio: "The counterweight in Diablura's twin-guitar attack, Bobby trades leads and harmonies with Todd, layering texture over weight. A restless writer, he can be counted on to bring a technical and heavy approach to the band's evolving sound.",
   },
   {
-    name: "Raul Padilla",
+    name: "Bones",
     role: "Drums",
     image: "/members/raul-padilla.jpg",
-    bio: "The engine room. Raul's playing is all pocket and power — patient when the song needs it, punishing when it doesn't. His style of drumming is complimentary to the Bomba rhythms which set the pulse that gives the band its name.",
+    bio: "The engine room. Bones' playing is all pocket and power — patient when the song needs it, punishing when it doesn't. His style of drumming is complimentary to the Bomba rhythms which set the pulse that gives the band its name.",
   },
 ]
 
