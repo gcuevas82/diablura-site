@@ -80,6 +80,7 @@ export type BandEvent = {
 
 // Upcoming events — replace with real dates, venues, and ticket links.
 export const events: BandEvent[] = [
+  { date: "2026-08-09", venue: "Spats", city: "Berkeley, CA", ticketUrl: "#", status: "info-tba" },
   { date: "2026-08-15", venue: "Caravan Lounge", city: "San Jose, CA", ticketUrl: "#", status: "info-tba" },
   { date: "2026-09-13", venue: "Toot's Tavern", city: "Crockett, CA", ticketUrl: "#", status: "info-tba" },
 ]
