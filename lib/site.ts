@@ -43,25 +43,25 @@ export const members: Member[] = [
     name: "Ginger Cuevas",
     role: "Vocals",
     image: "/members/ginger-cuevas.jpg",
-    bio: "The voice of Diablura, moving from a low simmer to a full roar without losing the melody underneath. Ginger writes the band's lyrics, plays Bomba and even throws down a riff or two (or three) to help drive the overall songwriting process.",
+    bio: "The voice of Diablura, moving from a low simmer to a full roar without losing the melody underneath. Ginger writes the band's lyrics, plays Bomba and even throws down a riff or two (or three) to help drive the overall songwriting process. Photo by Sarah Arnold Photography.",
   },
   {
     name: "Todd Burnham",
     role: "Guitar",
     image: "/members/todd-burnham.jpg",
-    bio: "Architect of the band's riffs, Todd favors deliberate, heavy phrasing over speed for its own sake. His playing gives Diablura its signature bruising low end and its sudden, cutting leads.",
+    bio: "Architect of the band's riffs, Todd favors deliberate, heavy phrasing over speed for its own sake. His playing gives Diablura its signature bruising low end and its sudden, cutting leads. Photo by Sarah Arnold Photography.",
   },
   {
     name: "Bobby Jones",
     role: "Guitar",
     image: "/members/bobby-jones.jpg",
-    bio: "The counterweight in Diablura's twin-guitar attack, Bobby trades leads and harmonies with Todd, layering texture over weight. A restless writer, he can be counted on to bring a technical and heavy approach to the band's evolving sound.",
+    bio: "The counterweight in Diablura's twin-guitar attack, Bobby trades leads and harmonies with Todd, layering texture over weight. A restless writer, he can be counted on to bring a technical and heavy approach to the band's evolving sound. Photo by Sarah Arnold Photography.",
   },
   {
     name: "Bones",
     role: "Drums",
     image: "/members/raul-padilla.jpg",
-    bio: "The engine room. Bones' playing is all pocket and power — patient when the song needs it, punishing when it doesn't. His style of drumming is complimentary to the Bomba rhythms which set the pulse that gives the band its name.",
+    bio: "The engine room. Bones' playing is all pocket and power — patient when the song needs it, punishing when it doesn't. His style of drumming is complimentary to the Bomba rhythms which set the pulse that gives the band its name. Photo by Sarah Arnold Photography.",
   },
 ]
 
