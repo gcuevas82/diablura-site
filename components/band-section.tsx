@@ -27,6 +27,9 @@ export function BandSection() {
                 {m.name}
               </h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground text-pretty">{m.bio}</p>
+              {m.photoCredit && (
+                <p className="mt-3 text-xs italic text-muted-foreground/70">{m.photoCredit}</p>
+              )}
             </div>
           </article>
         ))}
