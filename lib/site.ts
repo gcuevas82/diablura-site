@@ -103,10 +103,10 @@ export const press = {
     alt: "Diablura, the four-piece metal band, lit in purple and blue neon",
     credit: "Photo by Sarah Arnold Photography.",
   },
-  // Set `src` to a file in /public/press (e.g. "/press/live-clip.mp4") to enable playback.
+  // Set `src` to a YouTube link or a file in /public/press (e.g. "/press/live-clip.mp4") to enable playback.
   videos: {
     hero: {
-      src: "", // e.g. "/press/hero.mp4"
+      src: "https://youtu.be/67B2H_OMABs",
       poster: "/press/band-photo.jpg",
       label: "Live Performance Reel",
     },

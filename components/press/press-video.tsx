@@ -6,7 +6,34 @@ type PressVideoProps = {
   label: string
 }
 
+function getYouTubeId(url: string): string | null {
+  const patterns = [
+    /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/|youtube\.com\/shorts\/)([\w-]{11})/,
+  ]
+  for (const p of patterns) {
+    const match = url.match(p)
+    if (match) return match[1]
+  }
+  return null
+}
+
 export function PressVideo({ src, poster, label }: PressVideoProps) {
+  const youTubeId = src ? getYouTubeId(src) : null
+
+  if (youTubeId) {
+    return (
+      <div className="relative aspect-video w-full overflow-hidden border border-border bg-black">
+        <iframe
+          src={`https://www.youtube.com/embed/${youTubeId}`}
+          title={label}
+          className="h-full w-full"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        />
+      </div>
+    )
+  }
+
   if (src) {
     return (
       <div className="relative aspect-video w-full overflow-hidden border border-border bg-black">
