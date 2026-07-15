@@ -85,6 +85,44 @@ export const events: BandEvent[] = [
   { date: "2026-09-13", venue: "Toot's Tavern", city: "Crockett, CA", ticketUrl: "#", status: "info-tba" },
 ]
 
+// ---------------------------------------------------------------------------
+// PRESS KIT (EPK) — content for the /press page and downloadable PDF.
+// Drop video files into /public/press and set the `src` fields below to make
+// the placeholders playable. Same for the stage plot / technical rider file.
+// ---------------------------------------------------------------------------
+export const press = {
+  // Full-length bio. Each string is a paragraph.
+  bio: [
+    "Diablura began in 2009, when guitarist Todd Burnham and vocalist Ginger Cuevas started a band called Heretic Faction, playing shows around Livermore, CA. That lineup eventually parted ways, and an album's worth of recordings was lost to a computer failure before it ever saw the light of day. Todd and Ginger kept writing together over the years, and after reconnecting at their old bass player's wedding, they decided it was time to finish what they started.",
+    "That reunion became Praise The Void. The songs were old, but Ginger brought something new to them: Bomba, the folkloric Puerto Rican genre she has spent years performing and composing as a seasoned player, including shows at SF Carnaval and her own Bomba event on KQED. The album's closing track, Dust, became the blueprint for the sound Diablura is known for today: metal built on doom and metalcore, vocals that swing between guttural and melodic, and Bomba percussion woven in wherever it earns its place, not on every song, but where it matters. Praise The Void was mixed and mastered by Reto Peter at Teahouse Studio in Oakland, with cover art by tattoo artist Louis Riddick, a Puerto Rican vejigante mask.",
+    "Drummer Bones joined soon after, bringing the Praise The Void songs to life on stage, followed by guitarist Bobby Jones, who rounded out the band alongside Todd and Ginger for both performing and songwriting. With the full lineup in place, Diablura sharpened its sound further on the new single Rough Night In Poughkeepsie, recorded, mixed, and mastered at Earhammer Studio in Oakland by Greg Wilkinson (Deathgrave, Autopsy), alongside two more songs currently being readied for release.",
+    "Diablura's sound sits at the experimental edge of metal: doom and metalcore as the foundation, vocals that push past comfortable, lyrics that are unflinchingly personal, and Bomba percussion that ties it all together with respect for a genre generations older than the band itself.",
+  ],
+  bandPhoto: {
+    src: "/press/band-photo.jpg",
+    alt: "Diablura, the four-piece metal band, lit in purple and blue neon",
+    credit: "Photo by Sarah Arnold Photography.",
+  },
+  // Set `src` to a YouTube link or a file in /public/press (e.g. "/press/live-clip.mp4") to enable playback.
+  videos: {
+    hero: {
+      src: "https://youtu.be/67B2H_OMABs",
+      poster: "/press/band-photo.jpg",
+      label: "Live Performance Reel",
+    },
+    clip: {
+      src: "https://youtu.be/Hhf32Z-XhrM",
+      poster: "/band-hero.jpg",
+      label: "Live at X-Bar",
+    },
+  },
+  // Technical rider & stage plot. Drop the file in /public/press and update `href`.
+  technical: {
+    stagePlotHref: "/press/diablura-stage-plot.pdf",
+    riderHref: "", // e.g. "/press/diablura-tech-rider.pdf"
+  },
+}
+
 export const contact = {
   instagram: "https://instagram.com/diabluraofficial",
   instagramHandle: "@diabluraofficial",
