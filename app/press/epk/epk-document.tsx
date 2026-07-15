@@ -9,8 +9,16 @@ const LINE = "#d9d4cf"
 const styles = StyleSheet.create({
   page: { paddingVertical: 40, paddingHorizontal: 48, fontFamily: "Helvetica", color: INK, fontSize: 10, lineHeight: 1.5 },
   eyebrow: { fontFamily: "Helvetica-Bold", fontSize: 8, letterSpacing: 2, color: CRIMSON, textTransform: "uppercase" },
-  title: { fontFamily: "Helvetica-Bold", fontSize: 34, letterSpacing: 1, textTransform: "uppercase", marginTop: 6 },
-  tagline: { fontSize: 10, letterSpacing: 2, color: MUTED, textTransform: "uppercase", marginTop: 6 },
+  title: {
+    fontFamily: "Helvetica-Bold",
+    fontSize: 34,
+    lineHeight: 1.1,
+    letterSpacing: 1,
+    textTransform: "uppercase",
+    marginTop: 6,
+    marginBottom: 8,
+  },
+  tagline: { fontSize: 10, lineHeight: 1.4, letterSpacing: 2, color: MUTED, textTransform: "uppercase" },
   image: { width: "100%", height: 220, objectFit: "cover", marginTop: 16, borderRadius: 2 },
   credit: { fontSize: 7, color: MUTED, marginTop: 4, fontStyle: "italic" },
   sectionTitle: { fontFamily: "Helvetica-Bold", fontSize: 14, textTransform: "uppercase", letterSpacing: 1, marginBottom: 8 },
