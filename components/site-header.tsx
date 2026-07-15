@@ -5,11 +5,12 @@ import { band } from "@/lib/site"
 import { Menu, X } from "lucide-react"
 
 const links = [
-  { href: "#band", label: "Band" },
-  { href: "#listen", label: "Listen" },
-  { href: "#shows", label: "Shows" },
-  { href: "#connect", label: "Stay in Touch" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#band", label: "Band" },
+  { href: "/#listen", label: "Listen" },
+  { href: "/#shows", label: "Shows" },
+  { href: "/#connect", label: "Stay in Touch" },
+  { href: "/#contact", label: "Contact" },
+  { href: "/press", label: "Press" },
 ]
 
 export function SiteHeader() {
@@ -18,7 +19,7 @@ export function SiteHeader() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:px-6">
-        <a href="#top" className="font-display text-2xl font-bold uppercase tracking-widest text-foreground">
+        <a href="/#top" className="font-display text-2xl font-bold uppercase tracking-widest text-foreground">
           {band.name}
         </a>
 
