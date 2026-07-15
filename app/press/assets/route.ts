@@ -30,7 +30,7 @@ Please do not alter, recolor, or distort the logos. Keep clear space around
 the marks and use the wordmark for the band name.
 
 Questions or need a specific format (vector/EPS, high-res)?
-Contact us via the press kit at the Diablura website.
+Contact us at diabluramusic@gmail.com.
 `
 
 export async function GET() {
