@@ -118,7 +118,8 @@ export const press = {
   },
   // Technical rider & stage plot. Drop the file in /public/press and update `href`.
   technical: {
-    stagePlotHref: "", // e.g. "/press/diablura-stage-plot.pdf"
+    stagePlotImage: "/press/diablura-stage-plot.png",
+    stagePlotHref: "/press/diablura-stage-plot.png",
     riderHref: "", // e.g. "/press/diablura-tech-rider.pdf"
   },
 }

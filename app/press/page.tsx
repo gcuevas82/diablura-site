@@ -200,13 +200,24 @@ export default function PressPage() {
             Input list, backline needs, and stage plot for a smooth load-in. Download below or request the latest
             versions from our booking agent.
           </p>
+          {press.technical.stagePlotImage ? (
+            <a
+              href={press.technical.stagePlotImage}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group mt-8 block overflow-hidden border border-border bg-card"
+            >
+              <Image
+                src={press.technical.stagePlotImage || "/placeholder.svg"}
+                alt="Diablura 2026 stage plot showing input list, drum kit, guitar backline, and mic placement"
+                width={1512}
+                height={1008}
+                className="h-auto w-full transition-transform duration-300 group-hover:scale-[1.02]"
+              />
+            </a>
+          ) : null}
           <div className="mt-8 grid gap-px overflow-hidden border border-border bg-border sm:grid-cols-2">
-            <TechnicalItem
-              icon={Map}
-              label="Stage Plot"
-              href={press.technical.stagePlotHref}
-              hint="PDF — coming soon"
-            />
+            <TechnicalItem icon={Map} label="Stage Plot" href={press.technical.stagePlotHref} hint="PNG — coming soon" />
             <TechnicalItem
               icon={FileText}
               label="Technical Rider"
@@ -367,7 +378,7 @@ function TechnicalItem({
       </div>
       <div>
         <p className="font-display text-xl font-medium uppercase tracking-tight text-foreground">{label}</p>
-        <p className="mt-1 text-xs text-muted-foreground">{available ? "Download PDF" : hint}</p>
+        <p className="mt-1 text-xs text-muted-foreground">{available ? "Download" : hint}</p>
       </div>
     </>
   )
