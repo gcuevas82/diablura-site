@@ -111,9 +111,9 @@ export const press = {
       label: "Live Performance Reel",
     },
     clip: {
-      src: "", // e.g. "/press/clip.mp4"
+      src: "https://youtu.be/Hhf32Z-XhrM",
       poster: "/band-hero.jpg",
-      label: "Studio / Live Clip",
+      label: "Live at X-Bar",
     },
   },
   // Technical rider & stage plot. Drop the file in /public/press and update `href`.
