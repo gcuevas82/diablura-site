@@ -113,7 +113,10 @@ export default function PressPage() {
 
         {/* 4. Second clip */}
         <section className="mt-20 md:mt-28">
-          <SectionHeading eyebrow="Watch" title="Live &amp; Studio Clip" />
+          <SectionHeading eyebrow="Watch" title="Live at X-Bar" />
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
+            Diablura performances include original projected visuals.
+          </p>
           <div className="mt-8">
             <PressVideo
               src={press.videos.clip.src}
