@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft, ArrowUpRight, FileText, Map, Mail, Music2 } from "lucide-react"
+import { ArrowLeft, ArrowUpRight, Download, FileText, Image as ImageIcon, Map, Mail, Music2 } from "lucide-react"
 import { band, press, streaming, events, contact, type BandEvent } from "@/lib/site"
 import { SiteFooter } from "@/components/site-footer"
 import { SectionHeading } from "@/components/section-heading"
@@ -282,16 +282,58 @@ export default function PressPage() {
         </section>
 
         {/* Download CTA */}
-        <section className="mt-20 flex flex-col items-start gap-6 border-t border-border pt-12 sm:flex-row sm:items-center sm:justify-between md:mt-28">
-          <div>
-            <h2 className="font-display text-2xl font-bold uppercase tracking-tight text-foreground">
-              Take It With You
-            </h2>
-            <p className="mt-2 max-w-md text-sm text-muted-foreground">
-              Download the full press kit as a single PDF — bio, photo, links, dates, and contacts in one file.
-            </p>
+        <section className="mt-20 border-t border-border pt-12 md:mt-28">
+          <h2 className="font-display text-2xl font-bold uppercase tracking-tight text-foreground">Take It With You</h2>
+          <p className="mt-2 max-w-md text-sm text-muted-foreground">
+            Everything you need to book, promote, and design around Diablura.
+          </p>
+
+          <div className="mt-8 grid gap-px overflow-hidden border border-border bg-border md:grid-cols-2">
+            {/* Full EPK PDF */}
+            <div className="flex flex-col justify-between gap-8 bg-card p-8">
+              <div>
+                <FileText className="size-7 text-primary" aria-hidden="true" />
+                <p className="mt-4 font-display text-xl font-medium uppercase tracking-tight text-foreground">
+                  Press Kit (PDF)
+                </p>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  The full EPK as a single PDF — bio, photo, links, dates, and contacts in one file.
+                </p>
+              </div>
+              <DownloadEpk className="w-full sm:w-auto" />
+            </div>
+
+            {/* Band assets ZIP */}
+            <div className="flex flex-col justify-between gap-8 bg-card p-8">
+              <div>
+                <div className="flex items-center gap-4">
+                  <span className="relative size-12 shrink-0 overflow-hidden">
+                    <Image
+                      src="/press/assets/diablura-vejigante.png"
+                      alt=""
+                      fill
+                      sizes="48px"
+                      className="object-contain"
+                    />
+                  </span>
+                  <ImageIcon className="size-7 text-primary" aria-hidden="true" />
+                </div>
+                <p className="mt-4 font-display text-xl font-medium uppercase tracking-tight text-foreground">
+                  Band Assets (ZIP)
+                </p>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Logo mark, vejigante artwork, and the wordmark logo for flyers, posters, and listings.
+                </p>
+              </div>
+              <a
+                href="/press/assets"
+                className="inline-flex w-full items-center justify-center gap-2 border border-border px-8 py-4 font-display text-sm font-semibold uppercase tracking-widest text-foreground transition-colors hover:border-primary hover:bg-primary hover:text-primary-foreground sm:w-auto"
+              >
+                <Download className="size-4" aria-hidden="true" />
+                Download Assets (ZIP)
+              </a>
+            </div>
           </div>
-          <DownloadEpk />
         </section>
       </main>
 
