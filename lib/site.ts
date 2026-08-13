@@ -76,12 +76,23 @@ export type BandEvent = {
   city: string
   ticketUrl: string
   status: "on-sale" | "sold-out" | "announced" | "info-tba"
+  // Optional venue/show flyer. Drop the image in /public/shows and set the path
+  // here (e.g. "/shows/caravan-lounge-flyer.jpg") to show it next to the event.
+  flyer?: string
+  flyerAlt?: string
 }
 
 // Upcoming events — replace with real dates, venues, and ticket links.
 export const events: BandEvent[] = [
-  { date: "2026-08-09", venue: "Spats", city: "Berkeley, CA", ticketUrl: "#", status: "info-tba" },
-  { date: "2026-08-15", venue: "Caravan Lounge", city: "San Jose, CA", ticketUrl: "#", status: "info-tba" },
+  {
+    date: "2026-08-15",
+    venue: "Caravan Lounge",
+    city: "San Jose, CA",
+    ticketUrl: "#",
+    status: "info-tba",
+    flyer: "/shows/caravan-lounge-2026-08-15.jpg",
+    flyerAlt: "Diablura with Goad and Three Reefs Deep at Caravan, Aug 15 2026 — 21+, no cover, 9PM",
+  },
   { date: "2026-09-13", venue: "Toot's Tavern", city: "Crockett, CA", ticketUrl: "#", status: "info-tba" },
 ]
 
