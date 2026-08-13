@@ -42,13 +42,29 @@ export function ShowsSection() {
                 <span className="eyebrow text-muted-foreground">{month}</span>
               </div>
 
-              <div>
-                <h3 className="font-display text-2xl font-medium uppercase tracking-tight text-foreground md:text-3xl">
-                  {e.venue}
-                </h3>
-                <p className="mt-1 text-sm text-muted-foreground">
-                  {weekday} · {e.city}
-                </p>
+              <div className="flex items-center gap-4">
+                {e.flyer ? (
+                  <a
+                    href={e.flyer}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="shrink-0 overflow-hidden border border-border transition-colors hover:border-primary"
+                  >
+                    <img
+                      src={e.flyer || "/placeholder.svg"}
+                      alt={e.flyerAlt ?? `Flyer for ${e.venue} show`}
+                      className="h-20 w-20 object-cover sm:h-24 sm:w-24"
+                    />
+                  </a>
+                ) : null}
+                <div>
+                  <h3 className="font-display text-2xl font-medium uppercase tracking-tight text-foreground md:text-3xl">
+                    {e.venue}
+                  </h3>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    {weekday} · {e.city}
+                  </p>
+                </div>
               </div>
 
               {soldOut ? (
