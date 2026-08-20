@@ -12,14 +12,24 @@ export function BandSection() {
         {members.map((m) => (
           <article key={m.name} className="group flex flex-col bg-card">
             <div className="relative aspect-[4/5] overflow-hidden">
-              <Image
-                src={m.image || "/placeholder.svg"}
-                alt={`${m.name}, ${m.role} of ${band.name}`}
-                fill
-                className="object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
-                sizes="(max-width: 640px) 100vw, 50vw"
-              />
-              <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-card to-transparent" />
+              {m.image ? (
+                <>
+                  <Image
+                    src={m.image || "/placeholder.svg"}
+                    alt={`${m.name}, ${m.role} of ${band.name}`}
+                    fill
+                    className="object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-card to-transparent" />
+                </>
+              ) : (
+                <div className="flex h-full w-full items-center justify-center bg-muted">
+                  <span className="font-display text-6xl font-bold uppercase tracking-tight text-muted-foreground/40">
+                    {m.name}
+                  </span>
+                </div>
+              )}
             </div>
             <div className="flex flex-1 flex-col p-6 md:p-8">
               <p className="eyebrow text-primary">{m.role}</p>
