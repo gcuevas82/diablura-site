@@ -62,11 +62,10 @@ export const members: Member[] = [
     photoCredit: "Photo by Sarah Arnold Photography.",
   },
   {
-    name: "Bones",
+    name: "TBD",
     role: "Drums",
-    image: "/members/raul-padilla.jpg",
-    bio: "The engine room. Bones' playing is all pocket and power — patient when the song needs it, punishing when it doesn't. His style of drumming is complimentary to the Bomba rhythms which set the pulse that gives the band its name.",
-    photoCredit: "Photo by Sarah Arnold Photography.",
+    image: "",
+    bio: "Diablura is ISO of a new drummer. If you are interested, please send us an email at diabluramusic@gmail.com.",
   },
 ]
 
@@ -85,15 +84,15 @@ export type BandEvent = {
 // Upcoming events — replace with real dates, venues, and ticket links.
 export const events: BandEvent[] = [
   {
-    date: "2026-08-15",
-    venue: "Caravan Lounge",
-    city: "San Jose, CA",
+    date: "2026-09-13",
+    venue: "Toot's Tavern",
+    city: "Crockett, CA",
     ticketUrl: "#",
     status: "info-tba",
-    flyer: "/shows/caravan-lounge-2026-08-15.jpg",
-    flyerAlt: "Diablura with Goad and Three Reefs Deep at Caravan, Aug 15 2026 — 21+, no cover, 9PM",
+    flyer: "/shows/toots-tavern-2026-09-13.jpg",
+    flyerAlt:
+      "The Dark Origins Tour flyer — True Unity Crew presents Oathbound with Titan Rage, Diablura, and iin arcs at Toot's Tavern, 627 2nd Ave, Crockett, CA. Sun 09.13, $10, doors 7PM, show 8PM, 21+.",
   },
-  { date: "2026-09-13", venue: "Toot's Tavern", city: "Crockett, CA", ticketUrl: "#", status: "info-tba" },
 ]
 
 // ---------------------------------------------------------------------------
