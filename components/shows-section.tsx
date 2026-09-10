@@ -90,9 +90,9 @@ export function ShowsSection() {
               ) : infoTba ? (
                 <span
                   aria-disabled="true"
-                  className="justify-self-start border border-border px-6 py-3 font-display text-xs font-semibold uppercase tracking-widest text-muted-foreground sm:justify-self-end"
+                  className="flex h-32 w-24 items-center justify-center justify-self-start border border-dashed border-border p-2 text-center font-display text-xs font-semibold uppercase tracking-widest text-muted-foreground sm:h-36 sm:w-28 sm:justify-self-end"
                 >
-                  More Info TBA
+                  More TBA
                 </span>
               ) : (
                 <a

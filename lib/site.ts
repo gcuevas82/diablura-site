@@ -93,6 +93,13 @@ export const events: BandEvent[] = [
     flyerAlt:
       "The Dark Origins Tour flyer — True Unity Crew presents Oathbound with Titan Rage, Diablura, and iin arcs at Toot's Tavern, 627 2nd Ave, Crockett, CA. Sun 09.13, $10, doors 7PM, show 8PM, 21+.",
   },
+  {
+    date: "2026-11-21",
+    venue: "Danny Murry's Irish Pub",
+    city: "San Leandro, CA",
+    ticketUrl: "#",
+    status: "info-tba",
+  },
 ]
 
 // ---------------------------------------------------------------------------
