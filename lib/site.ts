@@ -62,10 +62,10 @@ export const members: Member[] = [
     photoCredit: "Photo by Sarah Arnold Photography.",
   },
   {
-    name: "TBD",
-    role: "Drums",
-    image: "",
-    bio: "Diablura is ISO of a new drummer. If you are interested, please send us an email at diabluramusic@gmail.com.",
+  name: "Jake Lansberg",
+  role: "Drums",
+  image: "",
+  bio: "Diablura's newest member, Jake joined the band after stepping in for the Toot's Tavern show. A skilled, technical drummer fluent in every shade of metal from thrash to grindcore, he's also a songwriter developing a solo project of his own.",
   },
 ]
 
