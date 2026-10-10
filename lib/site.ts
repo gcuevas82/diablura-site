@@ -62,10 +62,10 @@ export const members: Member[] = [
     photoCredit: "Photo by Sarah Arnold Photography.",
   },
   {
-    name: "TBD",
-    role: "Drums",
-    image: "",
-    bio: "Diablura is ISO of a new drummer. If you are interested, please send us an email at diabluramusic@gmail.com.",
+  name: "Jake Lansberg",
+  role: "Drums",
+  image: "",
+  bio: "Diablura's newest member, Jake joined the band after stepping in for the Toot's Tavern show. A skilled, technical drummer fluent in every shade of metal from thrash to grindcore, he's also a songwriter developing a solo project of his own.",
   },
 ]
 
@@ -84,21 +84,14 @@ export type BandEvent = {
 // Upcoming events — replace with real dates, venues, and ticket links.
 export const events: BandEvent[] = [
   {
-    date: "2026-09-13",
-    venue: "Toot's Tavern",
-    city: "Crockett, CA",
-    ticketUrl: "#",
-    status: "info-tba",
-    flyer: "/shows/toots-tavern-2026-09-13.jpg",
-    flyerAlt:
-      "The Dark Origins Tour flyer — True Unity Crew presents Oathbound with Titan Rage, Diablura, and iin arcs at Toot's Tavern, 627 2nd Ave, Crockett, CA. Sun 09.13, $10, doors 7PM, show 8PM, 21+.",
-  },
-  {
     date: "2026-11-21",
     venue: "Danny Murry's Irish Pub",
     city: "San Leandro, CA",
     ticketUrl: "#",
     status: "info-tba",
+    flyer: "/shows/danny-murrys-2026-11-21.jpg",
+    flyerAlt:
+      "Grace Alcantar presents the Death Raider Debut EP Release Show with Sunset Ire and Diablura at Danny Murry's Irish Pub, San Leandro, California. Saturday, November 21, 2026. Doors at 8, show at 9, 21+, free.",
   },
 ]
 
